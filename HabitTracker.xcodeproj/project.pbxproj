@@ -12,6 +12,7 @@
 		E327CEEF26019371007EA8F2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E327CEEE26019371007EA8F2 /* Assets.xcassets */; };
 		E327CEF226019371007EA8F2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E327CEF126019371007EA8F2 /* Preview Assets.xcassets */; };
 		E327CEF526019371007EA8F2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E327CEF326019371007EA8F2 /* Main.storyboard */; };
+		E327CEFF2601A59A007EA8F2 /* StatusBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E327CEFE2601A59A007EA8F2 /* StatusBarController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +24,7 @@
 		E327CEF426019371007EA8F2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E327CEF626019371007EA8F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E327CEF726019371007EA8F2 /* HabitTracker.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = HabitTracker.entitlements; sourceTree = "<group>"; };
+		E327CEFE2601A59A007EA8F2 /* StatusBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusBarController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 				E327CEF626019371007EA8F2 /* Info.plist */,
 				E327CEF726019371007EA8F2 /* HabitTracker.entitlements */,
 				E327CEF026019371007EA8F2 /* Preview Content */,
+				E327CEFE2601A59A007EA8F2 /* StatusBarController.swift */,
 			);
 			path = HabitTracker;
 			sourceTree = "<group>";
@@ -145,6 +148,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				E327CEED2601936A007EA8F2 /* ContentView.swift in Sources */,
+				E327CEFF2601A59A007EA8F2 /* StatusBarController.swift in Sources */,
 				E327CEEB2601936A007EA8F2 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -13,6 +13,7 @@
 		E327CEF226019371007EA8F2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E327CEF126019371007EA8F2 /* Preview Assets.xcassets */; };
 		E327CEF526019371007EA8F2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E327CEF326019371007EA8F2 /* Main.storyboard */; };
 		E327CEFF2601A59A007EA8F2 /* StatusBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E327CEFE2601A59A007EA8F2 /* StatusBarController.swift */; };
+		E3A97FDC260EC79F00EAD3D1 /* EventMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3A97FDB260EC79F00EAD3D1 /* EventMonitor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +26,7 @@
 		E327CEF626019371007EA8F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E327CEF726019371007EA8F2 /* HabitTracker.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = HabitTracker.entitlements; sourceTree = "<group>"; };
 		E327CEFE2601A59A007EA8F2 /* StatusBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusBarController.swift; sourceTree = "<group>"; };
+		E3A97FDB260EC79F00EAD3D1 /* EventMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventMonitor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +67,7 @@
 				E327CEF726019371007EA8F2 /* HabitTracker.entitlements */,
 				E327CEF026019371007EA8F2 /* Preview Content */,
 				E327CEFE2601A59A007EA8F2 /* StatusBarController.swift */,
+				E3A97FDB260EC79F00EAD3D1 /* EventMonitor.swift */,
 			);
 			path = HabitTracker;
 			sourceTree = "<group>";
@@ -150,6 +153,7 @@
 				E327CEED2601936A007EA8F2 /* ContentView.swift in Sources */,
 				E327CEFF2601A59A007EA8F2 /* StatusBarController.swift in Sources */,
 				E327CEEB2601936A007EA8F2 /* AppDelegate.swift in Sources */,
+				E3A97FDC260EC79F00EAD3D1 /* EventMonitor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

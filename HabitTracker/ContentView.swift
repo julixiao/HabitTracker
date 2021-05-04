@@ -9,8 +9,18 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        Text("Hello, World!")
-            .frame(maxWidth: .infinity, maxHeight: .infinity)
+        VStack(alignment: .leading) {
+            Text("Habit Tracker")
+                .font(.title).foregroundColor(/*@START_MENU_TOKEN@*/.purple/*@END_MENU_TOKEN@*/)
+            HStack {
+                Text("Habit Name")
+                    .font(.subheadline)
+                Spacer()
+                Text("Done")
+                    .font(.subheadline)
+            }
+        }
+        .padding()
     }
 }
 

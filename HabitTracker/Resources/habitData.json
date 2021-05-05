@@ -1,0 +1,60 @@
+[
+	{
+		"name": "Drinking water",
+		"colour": ".blue",
+        "target": 8,
+        "records": [
+            {
+                "date": "20210504",
+                "value": 7,
+            },
+            {
+                "date": "20210503",
+                "value": 7,
+            },
+            {
+                "date": "20210502",
+                "value": 8,
+            },
+            {
+                "date": "20210501",
+                "value": 6,
+            },
+            {
+                "date": "20210505",
+                "value": 7,
+            },
+        ]
+	},
+    {
+        "name": "Exercising",
+        "colour": ".green",
+        "target": 1,
+        "records": [
+            {
+                "date": "20210505",
+                "value": 1,
+            },
+            {
+                "date": "20210504",
+                "value": 0,
+            },
+        ]
+    },
+    {
+        "name": "Sleeping 8 hours",
+        "colour": ".black",
+        "target": 1,
+        "records": [
+            {
+                "date": "20210505",
+                "value": 1,
+            },
+            {
+                "date": "20210504",
+                "value": 0,
+            },
+        ]
+    }
+
+]

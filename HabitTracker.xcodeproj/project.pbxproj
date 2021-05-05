@@ -13,6 +13,12 @@
 		E327CEF226019371007EA8F2 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E327CEF126019371007EA8F2 /* Preview Assets.xcassets */; };
 		E327CEF526019371007EA8F2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E327CEF326019371007EA8F2 /* Main.storyboard */; };
 		E327CEFF2601A59A007EA8F2 /* StatusBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E327CEFE2601A59A007EA8F2 /* StatusBarController.swift */; };
+		E34BCA882641DF9600B08219 /* HabitData.swift in Sources */ = {isa = PBXBuildFile; fileRef = E34BCA872641DF9600B08219 /* HabitData.swift */; };
+		E34BCA912641F54E00B08219 /* HabitRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = E34BCA902641F54E00B08219 /* HabitRow.swift */; };
+		E34BCA952641F88100B08219 /* Habit.swift in Sources */ = {isa = PBXBuildFile; fileRef = E34BCA942641F88100B08219 /* Habit.swift */; };
+		E34BCA9C2641F8FF00B08219 /* habitData.json in Resources */ = {isa = PBXBuildFile; fileRef = E34BCA9B2641F8FF00B08219 /* habitData.json */; };
+		E34BCA9F2641FB4D00B08219 /* HabitList.swift in Sources */ = {isa = PBXBuildFile; fileRef = E34BCA9E2641FB4D00B08219 /* HabitList.swift */; };
+		E34BCAA22642374600B08219 /* HabitTrack.swift in Sources */ = {isa = PBXBuildFile; fileRef = E34BCAA12642374600B08219 /* HabitTrack.swift */; };
 		E3A97FDC260EC79F00EAD3D1 /* EventMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3A97FDB260EC79F00EAD3D1 /* EventMonitor.swift */; };
 /* End PBXBuildFile section */
 
@@ -26,6 +32,12 @@
 		E327CEF626019371007EA8F2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E327CEF726019371007EA8F2 /* HabitTracker.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = HabitTracker.entitlements; sourceTree = "<group>"; };
 		E327CEFE2601A59A007EA8F2 /* StatusBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusBarController.swift; sourceTree = "<group>"; };
+		E34BCA872641DF9600B08219 /* HabitData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitData.swift; sourceTree = "<group>"; };
+		E34BCA902641F54E00B08219 /* HabitRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitRow.swift; sourceTree = "<group>"; };
+		E34BCA942641F88100B08219 /* Habit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Habit.swift; sourceTree = "<group>"; };
+		E34BCA9B2641F8FF00B08219 /* habitData.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = habitData.json; sourceTree = "<group>"; };
+		E34BCA9E2641FB4D00B08219 /* HabitList.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitList.swift; sourceTree = "<group>"; };
+		E34BCAA12642374600B08219 /* HabitTrack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HabitTrack.swift; sourceTree = "<group>"; };
 		E3A97FDB260EC79F00EAD3D1 /* EventMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventMonitor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -59,8 +71,10 @@
 		E327CEE92601936A007EA8F2 /* HabitTracker */ = {
 			isa = PBXGroup;
 			children = (
+				E34BCA8D2641E1B900B08219 /* Resources */,
 				E327CEEA2601936A007EA8F2 /* AppDelegate.swift */,
-				E327CEEC2601936A007EA8F2 /* ContentView.swift */,
+				E34BCA8A2641E17600B08219 /* Views */,
+				E34BCA8B2641E1AD00B08219 /* Model */,
 				E327CEEE26019371007EA8F2 /* Assets.xcassets */,
 				E327CEF326019371007EA8F2 /* Main.storyboard */,
 				E327CEF626019371007EA8F2 /* Info.plist */,
@@ -78,6 +92,34 @@
 				E327CEF126019371007EA8F2 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		E34BCA8A2641E17600B08219 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E327CEEC2601936A007EA8F2 /* ContentView.swift */,
+				E34BCA902641F54E00B08219 /* HabitRow.swift */,
+				E34BCA9E2641FB4D00B08219 /* HabitList.swift */,
+				E34BCAA12642374600B08219 /* HabitTrack.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		E34BCA8B2641E1AD00B08219 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				E34BCA872641DF9600B08219 /* HabitData.swift */,
+				E34BCA942641F88100B08219 /* Habit.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E34BCA8D2641E1B900B08219 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				E34BCA9B2641F8FF00B08219 /* habitData.json */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,6 +181,7 @@
 			files = (
 				E327CEF526019371007EA8F2 /* Main.storyboard in Resources */,
 				E327CEF226019371007EA8F2 /* Preview Assets.xcassets in Resources */,
+				E34BCA9C2641F8FF00B08219 /* habitData.json in Resources */,
 				E327CEEF26019371007EA8F2 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -152,8 +195,13 @@
 			files = (
 				E327CEED2601936A007EA8F2 /* ContentView.swift in Sources */,
 				E327CEFF2601A59A007EA8F2 /* StatusBarController.swift in Sources */,
+				E34BCAA22642374600B08219 /* HabitTrack.swift in Sources */,
+				E34BCA882641DF9600B08219 /* HabitData.swift in Sources */,
 				E327CEEB2601936A007EA8F2 /* AppDelegate.swift in Sources */,
 				E3A97FDC260EC79F00EAD3D1 /* EventMonitor.swift in Sources */,
+				E34BCA912641F54E00B08219 /* HabitRow.swift in Sources */,
+				E34BCA9F2641FB4D00B08219 /* HabitList.swift in Sources */,
+				E34BCA952641F88100B08219 /* Habit.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

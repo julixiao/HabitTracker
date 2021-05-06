@@ -7,32 +7,44 @@
 
 import SwiftUI
 
+@available(macOS 11.0, *)
 struct HabitTrack: View {
     var habit: Habit
     var habitRecord: Habit.Record
+    var date = Date()
+    
+    var dateFormatter: DateFormatter {
+        let df = DateFormatter()
+        df.dateFormat = "MMM d, y"
+        return df
+    }
+    
+    @available(macOS 11.0, *)
     var body: some View {
         ScrollView{
             VStack(alignment: .leading) {
-                Text("Habit Tracker")
-                    .font(.title).foregroundColor(Color(red: 1.0, green: 0.0, blue: 0.0, opacity: 1.0))
+                Text(habit.name)
+                    .font(.title)
                 
                 Divider().foregroundColor(.black)
                 
                 HStack {
-                    Text(habit.name)
-                        .font(.subheadline)
+                    Text("\(date, formatter: dateFormatter)")
+
                     Spacer()
-                    Text(String(habitRecord.value))
-                        .font(.subheadline)
+                    
+                    if habitRecord.value != 0 {
+                        Image(systemName: "checkmark.square")
+                    }
                 }
             }
             .padding()
         }
-//        .navigationTitle(habit.name)
-//        .navigationBarTitleDisplayMode(.inline)
+        .navigationTitle(habit.name)
     }
 }
 
+@available(macOS 11.0, *)
 struct HabitTrack_Previews: PreviewProvider {
     static var previews: some View {
         HabitTrack(habit: habits[0], habitRecord: habits[0].records[0])

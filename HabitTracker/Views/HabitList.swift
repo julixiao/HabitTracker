@@ -8,6 +8,7 @@
 import SwiftUI
 
 
+@available(macOS 11.0, *)
 struct HabitList: View {
     var body: some View {
         NavigationView {
@@ -16,11 +17,12 @@ struct HabitList: View {
                     HabitRow(habit: habit)
                 }
             }
-//            .navigationTitle("Habits")
+            .navigationTitle(Text("Habits"))
         }
     }
 }
 
+@available(macOS 11.0, *)
 struct HabitList_Previews: PreviewProvider {
     static var previews: some View {
         HabitList()
